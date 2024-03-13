@@ -15,6 +15,12 @@
     .then(data => {
         console.log(data);
         document.write(data);
+        // 以xml格式返回
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(data, "text/xml");
+        console.log(xmlDoc);
+
+        
     });
 
 </script>
